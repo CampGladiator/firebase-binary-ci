@@ -1,0 +1,15 @@
+name: Update firebase binary
+on:
+  push:
+  schedule:
+        - cron: '0 0 * * *' # run every day at midnight
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ./update.sh
+         ./update.sh
+      shell: bash
