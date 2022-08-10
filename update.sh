@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -euxo pipefail
+
 echo "-- Downloading latest firebase binary..."
 curl -Lo ./firebase https://firebase.tools/bin/macos/latest
 

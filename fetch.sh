@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -euxo pipefail
+
 echo "-- Creating download directory..."
 INSTALL_DIR="/usr/local/bin"
 sudo mkdir -p "$INSTALL_DIR"
